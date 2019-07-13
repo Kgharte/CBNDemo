@@ -11,13 +11,15 @@ import { MatIconModule } from '@angular/material';
 import { MatSidenavModule, MatToolbarModule } from '@angular/material';
 import { MatMenuModule} from '@angular/material/menu';
 import { HeaderComponent } from './components/header/header.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 @NgModule({
 
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
