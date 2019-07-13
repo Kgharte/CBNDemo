@@ -3,15 +3,16 @@ import { NgModule  } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+
 // Material Section
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatInputModule } from '@angular/material';
 import { MatCheckboxModule } from '@angular/material';
 import { MatIconModule, MatFormFieldModule } from '@angular/material';
-import { MatSidenavModule, 
+import { MatSidenavModule,
          MatToolbarModule,
-         MatSelectModule,MatSpinner  } from '@angular/material';
-         import { MatCardModule } from '@angular/material';         
+         MatSelectModule, MatSpinner  } from '@angular/material';
+import { MatCardModule } from '@angular/material';
 import { MatMenuModule} from '@angular/material/menu';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
@@ -45,10 +46,8 @@ import { FormsModule } from '@angular/forms';
     MatSidenavModule,
     MatToolbarModule,
     MatMenuModule,
-
     MatSelectModule,
     MatButtonModule, MatFormFieldModule, MatInputModule,
-    FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule,
     MatCardModule,
@@ -59,7 +58,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule
 
   ],
-  
+
   providers: [],
   bootstrap: [AppComponent]
 })

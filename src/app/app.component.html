@@ -1,5 +1,5 @@
+<!-- <router-outlet></router-outlet>  -->
 
- 
- <router-outlet></router-outlet> 
-
-
+<div [@slideInOut]="triggerAnimation(outlet)" id="mainContainer">
+    <router-outlet #outlet="outlet" ></router-outlet>
+  </div>
