@@ -2,6 +2,26 @@
   <mat-card class="pics">
    <h1>Login</h1>
   <form  (ngSubmit)="login()">
+
+      <div class="example-container">
+          <mat-form-field>
+            <input matInput placeholder="Email">
+          </mat-form-field>
+          <br>
+          <mat-form-field>
+              <input matInput placeholder="password">
+          </mat-form-field>
+          <br>
+          <mat-form-field>
+            <mat-select placeholder="Select">
+              <mat-option value="option">Option</mat-option>
+              <mat-option value="option">Option1</mat-option>
+              <mat-option value="option">Option2</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+  <!--
       <mat-form-field appearance="outline" class="id">
           <mat-label>Email-Id</mat-label>
           <input
@@ -19,7 +39,7 @@
            Email is <strong>required</strong>
           </mat-error>
          </mat-form-field>
-
+        -->
   </form>
  </mat-card>
   </div>

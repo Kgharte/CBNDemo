@@ -14,6 +14,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 
 
@@ -38,6 +39,7 @@ import { FormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatInputModule,
     FlexLayoutModule,
+    MatSelectModule,
     FormsModule
   ],
   providers: [],
