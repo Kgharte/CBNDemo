@@ -8,10 +8,10 @@ import { RegistrationComponent } from './components/registration/registration.co
 const routes: Routes = [
 
   {
-    path: 'signup', component: RegistrationComponent
+    path: 'signup', component: RegistrationComponent,  data: { animation: 'signup' }
   },
   {
-    path: '', component: LoginComponent
+    path: '', component: LoginComponent,  data: { animation: 'login' }
   },
   {
     path: 'header', component: HeaderComponent

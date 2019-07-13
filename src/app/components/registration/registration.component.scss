@@ -1,14 +1,24 @@
 .example-card {
-  width: 40%;
-  border: 15px;
+  width: 70%;
+  box-shadow: 10px 10px 10px black;
+  border-radius: 50px 50px 50px 50px;
+  border-radius:40px;
+  opacity: 0.8;
+  background-color: #88b3f7;
 }
 .container{
-  padding-left: 450px;
+  padding-left: 230px;
 
 }
+
 mat-form-field{
   width: 300px;
 
 }
-
+.newJoinee{
+  margin-left: 300px;
+}
+.register{
+  margin-left: 350px;
+}
     

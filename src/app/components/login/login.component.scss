@@ -1,12 +1,12 @@
-
 .container {
     // background-image: url("../../images/showcase.jpg");
     // background-image: cover;
     // background-repeat: no-repeat;
-    background-color: rgb(245, 240, 235);
+    background-color: #f4f4f4;
     margin:0px;
-    width: 100%;
+    width: 99%;
     position: absolute;
+    height: 98%;
 
 }
 /*
@@ -27,16 +27,38 @@
     box-shadow: 10px 10px 10px black;
     border-radius: 50px 50px 50px 50px;
     // background-image: url("../../images/CloudComputing.jpg");
-    background-color: aqua;
-    opacity: 0.9;
+    background-color: rgba(74, 147, 243, 0.884);
+    opacity: 0.8;
+}
+
+h1 {
+  width: 30%;
+  margin: auto;
 }
 
 mat-form-field {
-  width: 80%;
+  width: 90%;
+}
+
+button.login {
+
+  width: 30%;
+  color: whitesmoke;
+}
+
+button.register {
+  width: 100px;
+  margin-left: 40vw;
+}
+
+.newJoinee {
+
+  margin-left: 35%;
+  font-size: 1.6vw;
+;
 }
 
 /*
-
 @media (max-width:1024px)
 {
     .button[_ngcontent-c1] {
@@ -73,9 +95,6 @@ wrap {
     background-image: url("../../images/CloudComputing.jpg");
     opacity: 0.9;
 }
-
-
-
 }
 @media (max-width:786px){
     input[type=text] {
@@ -100,18 +119,12 @@ wrap {
         padding-top: 35px;
     }
 }
-
-
-
-
-
 @media (max-width:320px)
 {header img
     {
         height: 50px;
         width: 100px;
     }
-
     input[type=text] {
         width: 19%;
         padding: 10px 10px;
@@ -124,7 +137,6 @@ wrap {
         position: absolute;
         top: 30px;
         z-index: 1;
-
     }
     .button {
         z-index: 1;
@@ -184,5 +196,4 @@ wrap {
         height: 750px;
     }
 }
-
 */
