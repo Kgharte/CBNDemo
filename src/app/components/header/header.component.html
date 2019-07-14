@@ -21,24 +21,132 @@
     <!--<button mat-menu-item>Help</button>-->
   </mat-menu>
 
+  
+  <!-- <div class="carousel carousel-slider center" data-indicators="true" materialize="carousel" [materializeActions]="carouselActions">
+    <div class="carousel-fixed-item center">
+      <a class="btn waves-effect white grey-text darken-text-2">button</a>
+    </div>
+    <div class="carousel-item red white-text" href="#one!">
+      <h2>First Panel</h2>
+      <p class="white-text">This is your first panel</p>
+    </div>
+    <div class="carousel-item amber white-text" href="#two!">
+      <h2>Second Panel</h2>
+      <p class="white-text">This is your second panel</p>
+    </div>
+    <div class="carousel-item green white-text" href="#three!">
+      <h2>Third Panel</h2>
+      <p class="white-text">This is your third panel</p>
+    </div>
+    <div class="carousel-item blue white-text" href="#four!">
+      <h2>Fourth Panel</h2>
+      <p class="white-text">This is your fourth panel</p>
+    </div>
+  </div>
+  <a class="waves-effect waves-light btn modal-trigger" (click)="prev()">prev</a> 
+  <a class="waves-effect waves-light btn modal-trigger" (click)="next()">next</a>      -->
 
-  <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Shiba Inu</mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-        <mat-card-content>
-          <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-            bred for hunting.
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
-        </mat-card-actions>
-      </mat-card>
-      
+<section id="portfolio" [ngStyle.lt-md]="{'margin-top': '30px', 'margin-bottom': '30px'}">
+      <div class="container portfolio-card">
+
+        <div class="portfolio-section portfolio-heading mat-typography" fxLayout="column" fxLayoutAlign="center center">
+            <div>
+            <h2 [ngStyle.lt-md]="{'margin-bottom': '15px'}">Applications</h2>
+            </div>
+            <div>
+            <h3 [ngStyle.xs]="{'font-size': '18px'}" [ngStyle.sm]="{'font-size': '22px'}">Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Doloribus numquam quis.</h3>
+            </div>
+        </div>
+
+        <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutWrap="nowrap" fxLayoutGap="30px" fxLayoutGap.sm="8px">
+          
+            <mat-card class="p-0 m-0">
+              <img mat-card-image src="assets/img/1.jpg">
+              <mat-card-content>
+                <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">Application Title</h5>
+                <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
+                  Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Doloribus numquam quis.
+                </p>
+                <mat-divider class="mb-1"></mat-divider>
+                <button class="portfolio-button" mat-icon-button><mat-icon class="text-muted">link1</mat-icon></button>
+                <button class="portfolio-button" mat-icon-button><mat-icon class="text-muted">share</mat-icon></button>
+              </mat-card-content>
+            </mat-card>
+          
+          
+            <mat-card class="p-0 m-0">
+              <img mat-card-image src="assets/img/2.jpg">
+              <mat-card-content>
+                <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">Application Title</h5>
+                <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
+                  Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Doloribus numquam quis.
+                </p>
+                <mat-divider class="mb-1"></mat-divider>
+                <button class="portfolio-button" mat-icon-button><mat-icon class="text-muted">link</mat-icon></button>
+                <button class="portfolio-button" mat-icon-button><mat-icon class="text-muted">share</mat-icon></button>
+              </mat-card-content>
+            </mat-card>
+          
+          
+            <mat-card class="p-0 m-0">
+              <img mat-card-image src="assets/img/3.jpg">
+              <mat-card-content>
+                <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">Application Title</h5>
+                <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
+                  Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Doloribus numquam quis.
+                </p>
+                <mat-divider class="mb-1"></mat-divider>
+                <button class="portfolio-button" mat-icon-button><mat-icon class="text-muted">link</mat-icon></button>
+                <button class="portfolio-button" mat-icon-button><mat-icon class="text-muted">share</mat-icon></button>
+              </mat-card-content>
+            </mat-card>
+         
+        </div>
+        
+        <div class="portfolio-row" fxLayout="row" fxLayout.lt-sm="column" fxLayoutWrap="nowrap" fxLayoutGap="30px" fxLayoutGap.sm="8px">
+        
+            <mat-card class="p-0 m-0">
+              <img mat-card-image src="assets/img/4.jpg">
+              <mat-card-content>
+                <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">Application Title</h5>
+                <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
+                  Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Doloribus numquam quis.
+                </p>
+                <mat-divider class="mb-1"></mat-divider>
+                <button class="portfolio-button" mat-icon-button><mat-icon class="text-muted">link</mat-icon></button>
+                <button class="portfolio-button" mat-icon-button><mat-icon class="text-muted">share</mat-icon></button>
+              </mat-card-content>
+            </mat-card>
+         
+         
+            <mat-card class="p-0 m-0">
+              <img mat-card-image src="assets/img/5.jpg">
+              <mat-card-content>
+                <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">Application Title</h5>
+                <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
+                  Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Doloribus numquam quis.
+                </p>
+                <mat-divider class="mb-1"></mat-divider>
+                <button class="portfolio-button" mat-icon-button><mat-icon class="text-muted">link</mat-icon></button>
+                <button class="portfolio-button" mat-icon-button><mat-icon class="text-muted">share</mat-icon></button>
+              </mat-card-content>
+            </mat-card>
+         
+            <mat-card class="p-0 m-0">
+              <img mat-card-image src="assets/img/6.jpg">
+              <mat-card-content>
+                <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">Application Title</h5>
+                <p class="mat-subheading-2" [ngStyle.sm]="{'font-size': '12px'}">
+                  Lorem ipsum dolor sit amet conse ctetur adipi sicing elit. Doloribus numquam quis.
+                </p>
+                <mat-divider class="mb-1"></mat-divider>
+                <button class="portfolio-button" mat-icon-button><mat-icon class="text-muted">link</mat-icon></button>
+                <button class="portfolio-button" mat-icon-button><mat-icon class="text-muted">share</mat-icon></button>
+              </mat-card-content>
+            </mat-card>
+          
+        </div>
+
+      </div>
+</section>
+

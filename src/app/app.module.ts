@@ -20,7 +20,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-
+import {MatListModule} from '@angular/material/list';
 
 import { FormsModule } from '@angular/forms';
 
@@ -39,13 +39,14 @@ import { FormsModule } from '@angular/forms';
     MatProgressSpinnerModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-
+    MatListModule,
     MatButtonModule,
     MatCheckboxModule,
     MatIconModule,
     MatSidenavModule,
     MatToolbarModule,
     MatMenuModule,
+   
     MatSelectModule,
     MatButtonModule, MatFormFieldModule, MatInputModule,
     FormsModule,

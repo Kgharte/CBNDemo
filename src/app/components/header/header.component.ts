@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,EventEmitter } from '@angular/core';
+// import { MaterializeAction } from 'angular2-materialize';
+
+
 
 @Component({
   selector: 'app-header',
@@ -7,10 +10,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+
   title = 'CBN';
   constructor() { }
 
   ngOnInit() {
   }
+  openDialog(): void {
+   
+  }
 
+  // carouselActions = new EventEmitter<string|MaterializeAction>();
+
+  // prev(){
+  //   console.log(this.carouselActions);  
+  // }
+  // next(){
+  //    this.carouselActions.emit({action:"carousel",params:['next']});
+  // }
+  
 }
