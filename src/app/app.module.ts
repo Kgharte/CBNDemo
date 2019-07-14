@@ -24,6 +24,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 
 import { FormsModule } from '@angular/forms';
+import { DashboardDataService } from './shared/dashboard-data.service';
 
 
 
@@ -60,7 +61,7 @@ import { FormsModule } from '@angular/forms';
 
   ],
 
-  providers: [],
+  providers: [DashboardDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

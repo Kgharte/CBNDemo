@@ -1,37 +1,30 @@
-// .example-card {
-//   // width: 40%;
-//   width: 80%;
-//   border: 15px;
-// }
 .container{
-   margin-top: 5em;
-
+  position: absolute;
+  padding-left: 230px;
+  background-color:  #f4f4f4;
+  height: 98%;
 }
 
-.seperator {
-  width: 100%;
-  padding: 3px;
+.example-card {
+  width: 70%;
+  position: relative;
+  top: 1em;
+  box-shadow: 10px 10px 10px black;
+  border-radius: 50px 50px 50px 50px;
+  border-radius:40px;
+  opacity: 0.8;
+  background-color: #88b3f7;
 }
 
-.seperator > * {
-  width: 80%;
-}
-
-button.register {
-  width: 100px;
-  margin-left: 40vw;
-}
-
-.newJoinee {
-
-  margin-left: 35%;
-  font-size: 1.6vw;
+mat-form-field{
+  width: 300px;
 
 }
-
-// mat-form-field{
-//    width: 300px;
-
-
-// }
+.newJoinee{
+  margin-left: 6vw;
+}
+.register{
+  margin-left: 2%;
+  display: inline-block;
+}
 

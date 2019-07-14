@@ -1,4 +1,3 @@
-
 .container {
     // background-image: url("../../images/showcase.jpg");
     // background-image: cover;
@@ -59,8 +58,25 @@ button.register {
 
 }
 
-/*
+button.login {
 
+  width: 30%;
+  color: whitesmoke;
+}
+
+button.register {
+  width: 100px;
+  margin-left: 40vw;
+}
+
+.newJoinee {
+
+  margin-left: 35%;
+  font-size: 1.6vw;
+;
+}
+
+/*
 @media (max-width:1024px)
 {
     .button[_ngcontent-c1] {
@@ -97,9 +113,6 @@ wrap {
     background-image: url("../../images/CloudComputing.jpg");
     opacity: 0.9;
 }
-
-
-
 }
 @media (max-width:786px){
     input[type=text] {
@@ -124,18 +137,12 @@ wrap {
         padding-top: 35px;
     }
 }
-
-
-
-
-
 @media (max-width:320px)
 {header img
     {
         height: 50px;
         width: 100px;
     }
-
     input[type=text] {
         width: 19%;
         padding: 10px 10px;
@@ -148,7 +155,6 @@ wrap {
         position: absolute;
         top: 30px;
         z-index: 1;
-
     }
     .button {
         z-index: 1;
@@ -208,5 +214,4 @@ wrap {
         height: 750px;
     }
 }
-
 */
