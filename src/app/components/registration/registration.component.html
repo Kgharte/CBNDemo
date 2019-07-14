@@ -1,53 +1,59 @@
 <div class="container">
 	<mat-card class="example-card">
-	
+
     <div class="row">
       <div class="registration-form col-md-6" style="max-width: -webkit-fill-available;">
         <div class="main-div" style="width: inherit;text-align: center">
           <div class="panel">
             <h2>Application Registration</h2>
           </div>
-              
-        <form #registartionForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+
+        <form #registartionForm="ngForm" (ngSubmit)="onSubmit(registartionForm)" novalidate>
 
 				<mat-form-field class="example-full-width" style="padding-right: 7%">
-           <input matInput placeholder="ApplicationId" [(ngModel)]="ApplicationId" name="applicationid" required>
+           <input matInput placeholder="ApplicationId" ngModel name="applicationid" required>
         </mat-form-field>
-        
+
         <mat-form-field class="example-full-width">
-           <input matInput placeholder="ApplicationName" [(ngModel)]="ApplicationName" name="applicationname" required>
+           <input matInput placeholder="ApplicationName" ngModel name="applicationname" required>
         </mat-form-field>
-  
+
         <mat-form-field style="padding-right: 7%">
-          <mat-select placeholder="Application Type">
-              <mat-option value="option">WSE</mat-option>
-              <mat-option value="option">Cloud</mat-option>
-              <mat-option value="option">Blockchain</mat-option>
+          <mat-select placeholder="Application Type" ngModel name="applicationType">
+              <mat-option value="wse">WSE</mat-option>
+              <mat-option value="cloud">Cloud</mat-option>
+              <mat-option value="blockchain">Blockchain</mat-option>
           </mat-select>
         </mat-form-field>
- 
+
         <mat-form-field class="example-full-width">
-           <input matInput placeholder="Default Application Owner" [(ngModel)]="ApplicationId" name="AOs" required>
+           <input matInput placeholder="Default Application Owner" ngModel name="AppOwner" required>
         </mat-form-field>
- 
+
         <mat-form-field class="example-full-width" style="padding-right: 7%">
-           <input matInput placeholder="Local AO " [(ngModel)]="localao"  name="localao">
+           <input matInput placeholder="Local AO " ngModel  name="localao">
         </mat-form-field>
+<<<<<<< HEAD
   
         <mat-form-field class="example-full-width" color="black">
           <input matInput placeholder="Application delegated owner " [(ngModel)]="ado"  name="ado">
-        </mat-form-field>
-  
-        <mat-form-field class="example-full-width" style="padding-right: 7%">
-           <input matInput placeholder="Default Solution administrator" [(ngModel)]="dao" name="dao" required>
-        </mat-form-field>
-       
+=======
+
         <mat-form-field class="example-full-width">
-            <input matInput placeholder="Local Solution Admin " [(ngModel)]="lsa" name="lsa" required>
+          <input matInput placeholder="Application delegated owner " ngModel  name="appDelOwner">
+>>>>>>> 42f7ae285b927b58b142f3eaaaf647260674912e
         </mat-form-field>
-        
+
+        <mat-form-field class="example-full-width" style="padding-right: 7%">
+           <input matInput placeholder="Default Solution administrator" ngModel name="defSolAdmin" required>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Local Solution Admin " ngModel name="lsa" required>
+        </mat-form-field>
+
         <mat-form-field>
-          <mat-select placeholder="CBN Type">
+          <mat-select placeholder="CBN Type" ngModel name="CBNType">
            <mat-option value="option">no action, user is revalidated by default
            </mat-option>
            <mat-option value="option">no action, user to be deleted
@@ -56,17 +62,17 @@
          </mat-select>
         </mat-form-field>
         <mat-card-actions>
-            <button type="submit "mat-raised-button (click)="register()" color="primary">Register</button>
+            <button type="submit "mat-raised-button  color="primary">Register</button>
         </mat-card-actions>
       </form>
-   
+
+<Label class="newJoinee"> Are you already a user ?</Label>
+<button  class="register" mat-stroked-button color="primary" [routerLink]="['/']">Login</button>
+
 </div>
 </div>
 </div>
 
 </mat-card>
-<br><br>
-<Label class="newJoinee"> Are you already a user ?</Label>
-<br><br>
-<button  class="register" mat-stroked-button color="primary" [routerLink]="['/']">Login</button>
+
 </div>

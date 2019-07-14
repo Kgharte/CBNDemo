@@ -1,18 +1,19 @@
+.container{
+  position: absolute;
+  padding-left: 230px;
+  background-color:  #f4f4f4;
+  height: 98%;
+}
+
 .example-card {
   width: 70%;
- 
+  position: relative;
+  top: 1em;
   box-shadow: 10px 10px 10px black;
   border-radius: 50px 50px 50px 50px;
   border-radius:40px;
    opacity: 0.9;
   // background-color: #88b3f7;
-}
-.container{
-  margin:0px;
-  
-  position: absolute;
-  padding-left: 230px;
-  background-color:  #88b3f7;
 }
 
 mat-form-field{
@@ -20,10 +21,10 @@ mat-form-field{
 
 }
 .newJoinee{
-  margin-left: 300px;
+  margin-left: 6vw;
 }
 .register{
-  margin-left: 350px;
-  
+  margin-left: 2%;
+  display: inline-block;
 }
-    
+

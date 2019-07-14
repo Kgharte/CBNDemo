@@ -14,6 +14,7 @@ import { MatSidenavModule,
          MatSelectModule, MatSpinner  } from '@angular/material';
 import { MatCardModule } from '@angular/material';
 import { MatMenuModule} from '@angular/material/menu';
+import {MatGridListModule} from '@angular/material/grid-list';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
 
@@ -23,6 +24,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import {MatListModule} from '@angular/material/list';
 
 import { FormsModule } from '@angular/forms';
+import { DashboardDataService } from './shared/dashboard-data.service';
 
 
 
@@ -39,7 +41,7 @@ import { FormsModule } from '@angular/forms';
     MatProgressSpinnerModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MatListModule,
+    MatGridListModule,
     MatButtonModule,
     MatCheckboxModule,
     MatIconModule,
@@ -60,7 +62,7 @@ import { FormsModule } from '@angular/forms';
 
   ],
 
-  providers: [],
+  providers: [DashboardDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
