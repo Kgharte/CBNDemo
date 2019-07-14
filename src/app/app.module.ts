@@ -14,6 +14,7 @@ import { MatSidenavModule,
          MatSelectModule, MatSpinner  } from '@angular/material';
 import { MatCardModule } from '@angular/material';
 import { MatMenuModule} from '@angular/material/menu';
+import {MatGridListModule} from '@angular/material/grid-list';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
 
@@ -39,7 +40,7 @@ import { FormsModule } from '@angular/forms';
     MatProgressSpinnerModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-
+    MatGridListModule,
     MatButtonModule,
     MatCheckboxModule,
     MatIconModule,
