@@ -3,7 +3,8 @@ import { NgModule  } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
+import {  Angular2UsefulSwiperModule } from 'angular2-useful-swiper';
+import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 // Material Section
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatInputModule } from '@angular/material';
@@ -22,7 +23,6 @@ import { RegistrationComponent } from './components/registration/registration.co
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import {MatListModule} from '@angular/material/list';
-
 import { FormsModule } from '@angular/forms';
 import { DashboardDataService } from './shared/dashboard-data.service';
 
@@ -38,6 +38,8 @@ import { DashboardDataService } from './shared/dashboard-data.service';
   ],
   imports: [
     BrowserModule,
+    Ng2CarouselamosModule,
+    Angular2UsefulSwiperModule,
     MatProgressSpinnerModule,
     BrowserAnimationsModule,
     AppRoutingModule,
@@ -48,7 +50,6 @@ import { DashboardDataService } from './shared/dashboard-data.service';
     MatSidenavModule,
     MatToolbarModule,
     MatMenuModule,
-   
     MatSelectModule,
     MatButtonModule, MatFormFieldModule, MatInputModule,
     FormsModule,

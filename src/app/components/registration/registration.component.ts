@@ -17,6 +17,7 @@ export class RegistrationComponent implements OnInit {
 
   onSubmit(regForm: NgForm) {
     const applicationid = regForm.value.applicationid;
+    console.log(applicationid.value);
     const ApplicationName = regForm.value.ApplicationName;
     const applicationType = regForm.value.applicationType;
     const AppOwner = regForm.value.AppOwner;
