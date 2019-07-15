@@ -1,41 +1,11 @@
 .fill-remaining-space {
-    /*This fills the remaining space, by using flexbox.  
+    /*This fills the remaining space, by using flexbox.
    Every toolbar row uses a flexbox row layout. */
    flex: 1 1 auto;
  }
- .example-card{
-     width: 300px;
+
+ mat-toolbar {
+   border-radius: 20px;
  }
- .portfolio-row{
-	margin-top: 20px;
-}
 
-.portfolio-button{
-	margin-top: 10px;
-}
 
-.portfolio-section{
-  text-align: center;
-  
-}
-:hover {
-    background-color: yellow;
-  }
-
-.portfolio-heading{
-  padding-bottom: 30px;
-}
-
-.portfolio-heading h2{
-  font-size: 32px;
-}
-
-.portfolio-heading h3{
-  font-size: 22px;
-}
-.carousel-inner[_ngcontent-c4] img[_ngcontent-c4] {
-    height: 550px;
-    width: 100%;
-    padding-top: 100px;
-    
-}

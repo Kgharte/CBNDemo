@@ -38,7 +38,8 @@ export class RegistrationComponent implements OnInit {
       CBNType
     };
 
-    this.regService.registerUser(profileObject);
+    this.router.navigate(['/header']);
+   // this.regService.registerUser(profileObject);
   }
 
 }
