@@ -1,0 +1,72 @@
+
+
+    <div class="row">
+      <div class="registration-form col-md-6" style="max-width: -webkit-fill-available;">
+        <div class="main-div" style="width: inherit;text-align: center">
+          <div class="panel">
+            <h2>Application Registration</h2>
+          </div>
+
+        <form #registartionForm="ngForm" (ngSubmit)="onSubmit(registartionForm)" novalidate>
+
+				<mat-form-field class="example-full-width" style="padding-right: 7%">
+           <input matInput placeholder="ApplicationId" ngModel name="applicationid" required autocomplete="off">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+           <input matInput placeholder="ApplicationName" ngModel name="applicationname" required autocomplete="off">
+        </mat-form-field>
+
+        <mat-form-field style="padding-right: 7%">
+          <mat-select placeholder="Application Type" ngModel name="applicationType">
+              <mat-option value="wse">WSE</mat-option>
+              <mat-option value="cloud">Cloud</mat-option>
+              <mat-option value="blockchain">Blockchain</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+           <input matInput placeholder="Default Application Owner" ngModel name="AppOwner" required autocomplete="off">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" style="padding-right: 7%">
+           <input matInput placeholder="Local AO " ngModel  name="localao">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Application delegated owner " ngModel  name="appDelOwner" autocomplete="off">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" style="padding-right: 7%">
+           <input matInput placeholder="Default Solution administrator" ngModel name="defSolAdmin" required autocomplete="off">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="Local Solution Admin " ngModel name="lsa" required autocomplete="off">
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-select placeholder="CBN Type" ngModel name="CBNType">
+           <mat-option value="option">no action, user is revalidated by default
+           </mat-option>
+           <mat-option value="option">no action, user to be deleted
+           </mat-option>
+
+         </mat-select>
+        </mat-form-field>
+           <br>
+            <button class="submit" type="submit" mat-raised-button  color="accent" [disabled]="!registartionForm.valid">Register</button>
+            <button type="button" mat-raised-button  color="accent" (click)="dialogOff()">clear</button> 
+            
+      
+          </form>
+
+
+
+</div>
+</div>
+</div>
+
+
+
+

@@ -1,0 +1,26 @@
+
+  
+  /* .example-card {
+    width: auto;
+    position: relative;
+    top: 1em;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 50px 50px 50px 50px;
+    border-radius:40px;
+     opacity: 0.9;
+     /* background-color: #88b3f7; */
+ /* } */
+
+
+  
+  mat-form-field{
+    width: 400px;
+  
+  }
+
+  button.submit {
+    margin-right: 1em;
+  }
+ 
+  
+  
