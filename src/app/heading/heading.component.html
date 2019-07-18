@@ -1,6 +1,29 @@
 <section id="heading" class="mat-typography" [ngStyle.lt-md]="{'margin-top': '30px', 'margin-bottom': '30px'}">
   <div class="container">	
-		<div class="heading-section" fxLayout="column" fxLayoutAlign="center center">
+		<mat-carousel
+		timings="250ms ease-in"
+		[autoplay]="true"
+		interval="2500"
+		color="accent"
+		maxWidth="auto"
+		proportion="25"
+		slides="5"
+		[loop]="true"
+		[hideArrows]="false"
+		[hideIndicators]="false"
+		[useKeyboard]="true"
+		[useMouseWheel]="false"
+		orientation="ltr"
+	  >
+		<mat-carousel-slide
+		  #matCarouselSlide
+		  *ngFor="let slide of slides; let i = index"
+		  [image]="slide.name"
+		  overlayColor="#43516888"
+		  [hideOverlay]="false"
+		></mat-carousel-slide>
+	  </mat-carousel>
+	<!--	<div class="heading-section" fxLayout="column" fxLayoutAlign="center center">
     		<div [class.animated]="isHeading" [class.fadeInLeft]="isHeading">
 	        <h1 [ngStyle.xs]="{'font-size': '32px'}" [ngStyle.sm]="{'font-size': '42px'}">Continous Business Need</h1>
 	        </div>
@@ -8,9 +31,9 @@
 	        <h3 [ngStyle.xs]="{'font-size': '15px'}" [ngStyle.sm]="{'font-size': '18px'}">creating a versatile tool capable of automating most of the complexities of a Continuous Business Need revalidation process for multiple and diverse applications.</h3>
 	        </div>
 	        <div fxLayout="row" [class.animated]="isHeadingBtn" [class.fadeIn]="isHeadingBtn" [class.heading-btn]="isHeadingBtn">
-        		<!-- <a class="heading-button-left" mat-flat-button color="accent">Action</a>
-		        <a class="heading-button-right" mat-stroked-button color="accent">Action</a> -->
+        		 <a class="heading-button-left" mat-flat-button color="accent">Action</a>
+		        <a class="heading-button-right" mat-stroked-button color="accent">Action</a> 
 	    	</div>
-	    </div>
+	    </div> -->
    </div>
 </section>

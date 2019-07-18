@@ -11,7 +11,16 @@ export class HeadingComponent implements OnInit {
   isSubheading = true;
   isHeadingBtn = true;
 
-  constructor() { }
+  slides = [];
+  constructor() {
+    this.slides = [
+      {name: '../../assets/img/4.jpg'},
+      {name: '../../assets/img/5.jpg'},
+      {name: '../../assets/img/6.jpg'},
+      {name: '../../assets/img/7.jpg'},
+      {name: '../../assets/img/3.jpg'},
+    ];
+   }
 
   ngOnInit() {
   }

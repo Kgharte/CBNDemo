@@ -2,6 +2,10 @@
 @import 'nglp.scss';
 @import 'animation/nglp-animations.scss';
 
+section[_ngcontent-c10] {
+  margin-top: 2px;
+}
+
 /* ------ scroll off -------- */
 
 .scrollOff{
