@@ -12,7 +12,7 @@
 
         <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutWrap="nowrap" fxLayoutGap="30px" fxLayoutGap.sm="8px">
           <div fxFlex="33.33" [about] *ngFor="let app of appArray">
-            <mat-card class="p-0 m-0">
+            <mat-card class="p-0 m-0" [routerLink]="['/App']">
               <img mat-card-image src="assets/img/1.jpg">
               <mat-card-content>
                 <h5 class="mat-headline" [ngStyle.sm]="{'font-size': '16px'}">{{app}}</h5>

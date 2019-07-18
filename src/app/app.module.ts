@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { DirectivesModule } from './directives/directives.module';
 import { Material2Module } from './material2.module';
@@ -15,6 +15,8 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { ContactDialogComponent } from './contact-dialog/contact-dialog.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { HomeSectionComponent } from './home-section/home-section.component';
+import { RoutingModule } from './router.module';
 
 
 
@@ -28,7 +30,8 @@ import { RegistrationComponent } from './registration/registration.component';
     PricingComponent,
     BlogComponent,
     ContactComponent,
-    ContactDialogComponent
+    ContactDialogComponent,
+    HomeSectionComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import { RegistrationComponent } from './registration/registration.component';
     FlexLayoutModule,
     DirectivesModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RoutingModule
   ],
   providers: [],
   entryComponents: [ ContactDialogComponent, RegistrationComponent],
