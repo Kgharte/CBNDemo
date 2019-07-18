@@ -9,15 +9,15 @@
 
         <form #registartionForm="ngForm" (ngSubmit)="onSubmit(registartionForm)" novalidate>
 
-				<mat-form-field class="example-full-width" style="padding-right: 7%">
-           <input matInput placeholder="ApplicationId" ngModel name="applicationid" required autocomplete="off">
-        </mat-form-field>
+				<mat-form-field class="example-full-width" [color]="'accent'" style="padding-right: 7%">
+           <input matInput placeholder="ApplicationId"  ngModel name="applicationid" required autocomplete="off">
+          </mat-form-field>
 
-        <mat-form-field class="example-full-width">
+        <mat-form-field class="example-full-width" [color]="'accent'">
            <input matInput placeholder="ApplicationName" ngModel name="applicationname" required autocomplete="off">
         </mat-form-field>
 
-        <mat-form-field style="padding-right: 7%">
+        <mat-form-field style="padding-right: 7%" [color]="'accent'">
           <mat-select placeholder="Application Type" ngModel name="applicationType">
               <mat-option value="wse">WSE</mat-option>
               <mat-option value="cloud">Cloud</mat-option>
@@ -25,27 +25,27 @@
           </mat-select>
         </mat-form-field>
 
-        <mat-form-field class="example-full-width">
+        <mat-form-field class="example-full-width" [color]="'accent'">
            <input matInput placeholder="Default Application Owner" ngModel name="AppOwner" required autocomplete="off">
         </mat-form-field>
 
-        <mat-form-field class="example-full-width" style="padding-right: 7%">
+        <mat-form-field class="example-full-width" style="padding-right: 7%" [color]="'accent'">
            <input matInput placeholder="Local AO " ngModel  name="localao">
         </mat-form-field>
 
-        <mat-form-field class="example-full-width">
+        <mat-form-field class="example-full-width" [color]="'accent'">
           <input matInput placeholder="Application delegated owner " ngModel  name="appDelOwner" autocomplete="off">
         </mat-form-field>
 
-        <mat-form-field class="example-full-width" style="padding-right: 7%">
+        <mat-form-field class="example-full-width" style="padding-right: 7%" [color]="'accent'">
            <input matInput placeholder="Default Solution administrator" ngModel name="defSolAdmin" required autocomplete="off">
         </mat-form-field>
 
-        <mat-form-field class="example-full-width">
-            <input matInput placeholder="Local Solution Admin " ngModel name="lsa" required autocomplete="off">
+        <mat-form-field class="example-full-width" [color]="'accent'">
+            <input matInput placeholder="Local Solution Admin" ngModel name="lsa" required autocomplete="off">
         </mat-form-field>
 
-        <mat-form-field>
+        <mat-form-field [color]="'accent'">
           <mat-select placeholder="CBN Type" ngModel name="CBNType">
            <mat-option value="option">no action, user is revalidated by default
            </mat-option>
